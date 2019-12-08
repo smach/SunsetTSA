@@ -1,6 +1,6 @@
 ## Per Jenny Bryan here: https://github.com/STAT545-UBC/Discussion/issues/451#issuecomment-264598618
 ## quiets concerns of R CMD check re: the .'s that appear in pipelines
-if(getRversion() >= "2.10")  utils::globalVariables(c("."))
+if(getRversion() >= "2.10")  utils::globalVariables(c("City", "State"))
 
 
 #' Get airport codes by city
