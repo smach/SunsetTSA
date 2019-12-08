@@ -32,8 +32,8 @@ airport_codes_by_city <- function(the_city, the_state = "") {
 #' @export
 #'
 #' @examples
-#' all_airport_codes_by_state("RI")
-all_airport_codes_by_state <- function(the_state) {
+#' airport_codes_by_state("RI")
+airport_codes_by_state <- function(the_state) {
     matching_codes <- airport_codes[tolower(airport_codes$State) == tolower(the_state),]
   return(matching_codes)
 }

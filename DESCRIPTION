@@ -1,9 +1,9 @@
 Package: SunsetTSA
 Type: Package
-Title: Get Sunrise And Sunset Times For US Airport Locations From TSA API
+Title: Get Sunrise and Sunset Times for US Airport Locations
 Version: 1.0.0
 Authors@R: c(person("Sharon", "Machlis", email = "Rbook@machlis.com", role =  c("aut", "cre")))
-Description: Function to get sunrise and sunset times by date and US three-letter airport code.
+Description: Function to get sunrise and sunset times by date and US three-letter airport code from TSA API.
     Also functions to look up three-letter codes for US airports by city name, 
     city and state, state, and partial airport name.
 License: GPL-3
@@ -14,7 +14,8 @@ Imports:
 RoxygenNote: 7.0.2
 Suggests: 
     knitr,
-    rmarkdown
+    rmarkdown,
+    testthat (>= 2.1.0)
 VignetteBuilder: knitr
 Depends:
     R (>= 2.10)

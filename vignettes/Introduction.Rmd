@@ -55,10 +55,10 @@ airport_codes_by_city("Greenville", "SC")
 
 ####All codes in a state
 
-The `all_airport_codes_by_state()` function will return all available codes in a state, with the two-letter postal abbreviation as the argument:
+The `airport_codes_by_state()` function will return all available codes in a state, with the two-letter postal abbreviation as the argument:
 
 ```{r}
-all_airport_codes_by_state("RI")
+airport_codes_by_state("RI")
 ```
 
 ####Code by airport name
