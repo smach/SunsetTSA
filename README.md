@@ -9,3 +9,7 @@ This package is not yet on CRAN. To install it, you can use any number of packag
 
 For more information, run `vignette("Introduction",  package = "SunsetTSA")` after installing the package or head to the package website at [https://smach.github.io/SunsetTSA/](https://smach.github.io/SunsetTSA/).
 
+ <!-- badges: start -->
+  [![Travis build status](https://travis-ci.org/smach/SunsetTSA.svg?branch=master)](https://travis-ci.org/smach/SunsetTSA)
+  <!-- badges: end -->
+
