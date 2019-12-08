@@ -1,0 +1,5 @@
+airport_codes <- read.csv("data-raw/L_AIRPORT.csv_", stringsAsFactors = FALSE)
+airport_codes <- tidyr::separate(airport_codes, Description, into = c("City", "State"), sep = ", ")
+airport_codes <- tidyr::separate(airport_codes, State, into = c("State", "Airport"), sep = ": ")
+airport_codes <- dplyr::filter(airport_codes, stringr::str_detect(airport_codes$State, "^[A-Z][A-Z]$"))
+usethis::use_data(airport_codes, internal = TRUE, overwrite = TRUE)
