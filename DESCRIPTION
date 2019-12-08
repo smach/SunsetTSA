@@ -7,7 +7,7 @@ Description: Function to get sunrise and sunset times by date and US three-lette
     Data come from a US Transportation Security Administration API.
     Also functions to look up three-letter codes for US airports by city name, 
     city and state, state, and partial airport name, from a US Bureau of Transportation Statistics table.
-License: GPL-3
+License: GPL-3 + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Imports:

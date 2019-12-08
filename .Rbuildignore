@@ -12,3 +12,4 @@ README.Rmd
 README.md
 ^doc$
 ^Meta$
+^LICENSE\.md$
