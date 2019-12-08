@@ -7,4 +7,5 @@ The package also has several convenience functions to look up airport codes by c
 
 This package is not yet on CRAN. To install it, you can use any number of packages and functions, including `remotes::install_github("smach/SunsetTSA")` or `githubinstall::githubinstall("SunsetTSA")` (`githubinstall()` attempts to find a package on GitHub even if you don't know the repo owner's account, and then asks you if you want to install the version it finds.)
 
+For more information, run `vignette("Introduction",  package = "SunsetTSA")` after installing the package or head to the package website at [https://smach.github.io/SunsetTSA/](https://smach.github.io/SunsetTSA/).
 
