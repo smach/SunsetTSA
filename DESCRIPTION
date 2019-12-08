@@ -3,9 +3,10 @@ Type: Package
 Title: Get Sunrise and Sunset Times for US Airport Locations
 Version: 1.0.0
 Authors@R: c(person("Sharon", "Machlis", email = "Rbook@machlis.com", role =  c("aut", "cre")))
-Description: Function to get sunrise and sunset times by date and US three-letter airport code from TSA API.
+Description: Function to get sunrise and sunset times by date and US three-letter airport code.
+    Data come from a US Transportation Security Administration (TSA) API.
     Also functions to look up three-letter codes for US airports by city name, 
-    city and state, state, and partial airport name.
+    city and state, state, and partial airport name, from a US Bureau of Transportation Statistics table.
 License: GPL-3
 Encoding: UTF-8
 LazyData: true

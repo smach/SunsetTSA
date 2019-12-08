@@ -9,3 +9,5 @@ data-raw
 ^cran-comments\.md$
 README.Rmd
 README.md
+^doc$
+^Meta$
