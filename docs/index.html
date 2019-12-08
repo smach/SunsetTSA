@@ -12,7 +12,7 @@
 <!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/headroom.min.js" integrity="sha256-DJFC1kqIhelURkuza0AvYal5RxMtpzLjFhsnVIeuk+U=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- pkgdown --><link href="pkgdown.css" rel="stylesheet">
 <script src="pkgdown.js"></script><meta property="og:title" content="Get Sunrise and Sunset Times for US Airport Locations">
 <meta property="og:description" content="Function to get sunrise and sunset times by date and US three-letter airport code.
-    Data come from a US Transportation Security Administration (TSA) API.
+    Data come from a US Transportation Security Administration API.
     Also functions to look up three-letter codes for US airports by city name, 
     city and state, state, and partial airport name, from a US Bureau of Transportation Statistics table.">
 <meta name="twitter:card" content="summary">
@@ -84,7 +84,8 @@
 <p>The package also has several convenience functions to look up airport codes by city, city and state, state, or partial name of the airport. Results are a data frame with airport code, city, state, and airport name. Data come from the US Bureau of Transportation Statistics.</p>
 <p>This package is not yet on CRAN. To install it, you can use any number of packages and functions, including <code><a href="https://rdrr.io/pkg/remotes/man/install_github.html">remotes::install_github("smach/SunsetTSA")</a></code> or <code><a href="https://rdrr.io/pkg/githubinstall/man/gh_install_packages.html">githubinstall::githubinstall("SunsetTSA")</a></code> (<code>githubinstall()</code> attempts to find a package on GitHub even if you don’t know the repo owner’s account, and then asks you if you want to install the version it finds.)</p>
 <p>For more information, run <code><a href="articles/Introduction.html">vignette("Introduction",  package = "SunsetTSA")</a></code> after installing the package or head to the package website at <a href="https://smach.github.io/SunsetTSA/">https://smach.github.io/SunsetTSA/</a>.</p>
-<p><!-- badges: start --> <a href="https://travis-ci.org/smach/SunsetTSA"><img src="https://travis-ci.org/smach/SunsetTSA.svg?branch=master" alt="Travis build status"></a> <!-- badges: end --></p>
+<!-- badges: start -->
+
 </div>
 </div>
   </div>
@@ -100,7 +101,8 @@
 <div class="license">
 <h2>License</h2>
 <ul class="list-unstyled">
-<li><a href="https://www.r-project.org/Licenses/GPL-3">GPL-3</a></li>
+<li><a href="LICENSE.html">Full license</a></li>
+<li><small><a href="https://www.r-project.org/Licenses/GPL-3">GPL-3</a> + file <a href="LICENSE-text.html">LICENSE</a></small></li>
 </ul>
 </div>
 <div class="developers">
@@ -110,7 +112,13 @@
 </ul>
 </div>
 
-  </div>
+  <div class="dev-status">
+<h2>Dev status</h2>
+<ul class="list-unstyled">
+<li><a href="https://travis-ci.org/smach/SunsetTSA"><img src="https://travis-ci.org/smach/SunsetTSA.svg?branch=master" alt="Travis build status"></a></li>
+</ul>
+</div>
+</div>
 </div>
 
 

@@ -22,9 +22,7 @@ The SunsetTSA package contains a `sunrise_sunset()` function to get sunrise and 
 
 The package also includes several functions to look up three-letter codes for U.S. airports.
 
-The package is currently not on CRAN so it needs to be installed from GitHub. To install it, you can use any number of packages and functions, including `remotes::install_github("smach/SunsetTSA")` or `githubinstall::githubinstall("SunsetTSA")` (`githubinstall()` attempts to find a package on GitHub even if you don't know the repo owner's account, and then asks you if you want to install the version it finds.)
-
-###Get sunrise and sunset times
+### Get sunrise and sunset times
 
 Run `sunrise_sunset("3-letter airport code")` to get a list with Sunrise, Sunset, Date, and Location (which is the airport code you entered). If you don't specify a date, it defaults to today. For example:
 
@@ -38,13 +36,13 @@ To get results for another day, enter a date in `"yyyy-mm-dd"` format, such as t
 sunrise_sunset("ANC", "2020-06-20")
 ```
 
-###Get 3-letter airport codes
+### Get 3-letter airport codes
 
 SunsetTSA also has several functions for looking up 3-letter airport codes. It will return a data frame with any matches including columns for Code, City, State, and Airport.
 
 Data come from the U.S. Bureau of Transportation Statistics; I downloaded a CSV file from [https://www.transtats.bts.gov/Download_Lookup.asp?Lookup=L_AIRPORT](https://www.transtats.bts.gov/Download_Lookup.asp?Lookup=L_AIRPORT).
 
-####By city name
+#### By city name
 
 The `airport_codes_by_city()` function has one required argument, city name, and an optional state name, such as:
 
@@ -53,7 +51,7 @@ airport_codes_by_city("Providence")
 airport_codes_by_city("Greenville", "SC")
 ```
 
-####All codes in a state
+#### All codes in a state
 
 The `airport_codes_by_state()` function will return all available codes in a state, with the two-letter postal abbreviation as the argument:
 
@@ -61,7 +59,7 @@ The `airport_codes_by_state()` function will return all available codes in a sta
 airport_codes_by_state("RI")
 ```
 
-####Code by airport name
+#### Code by airport name
 
 You can also try looking up the code by airport name or partial airport name with `airport_codes_by_name()`. However, you'll need part of the _same name that the Bureau of Transportation uses._ So, while you may refer to one of New York City's airport as "JFK", you'd need to know that it's "John F. Kennedy International" to the BTS. "Kennedy" would also work:
 

@@ -84,8 +84,9 @@
     
 <p>The SunsetTSA package contains a <code><a href="../reference/sunrise_sunset.html">sunrise_sunset()</a></code> function to get sunrise and sunset times at any U.S. airport by airport code. Data come from a U.S. Transportation Security Administration API (no key needed).</p>
 <p>The package also includes several functions to look up three-letter codes for U.S. airports.</p>
-<p>The package is currently not on CRAN so it needs to be installed from GitHub. To install it, you can use any number of packages and functions, including <code><a href="https://rdrr.io/pkg/remotes/man/install_github.html">remotes::install_github("smach/SunsetTSA")</a></code> or <code><a href="https://rdrr.io/pkg/githubinstall/man/gh_install_packages.html">githubinstall::githubinstall("SunsetTSA")</a></code> (<code>githubinstall()</code> attempts to find a package on GitHub even if you don’t know the repo owner’s account, and then asks you if you want to install the version it finds.)</p>
-<p>###Get sunrise and sunset times</p>
+<div id="get-sunrise-and-sunset-times" class="section level3">
+<h3 class="hasAnchor">
+<a href="#get-sunrise-and-sunset-times" class="anchor"></a>Get sunrise and sunset times</h3>
 <p>Run <code><a href="../reference/sunrise_sunset.html">sunrise_sunset("3-letter airport code")</a></code> to get a list with Sunrise, Sunset, Date, and Location (which is the airport code you entered). If you don’t specify a date, it defaults to today. For example:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="kw"><a href="../reference/sunrise_sunset.html">sunrise_sunset</a></span>(<span class="st">"BOS"</span>)</a>
 <a class="sourceLine" id="cb1-2" data-line-number="2"><span class="co">#&gt; $Sunrise</span></a>
@@ -112,10 +113,15 @@
 <a class="sourceLine" id="cb2-10" data-line-number="10"><span class="co">#&gt; </span></a>
 <a class="sourceLine" id="cb2-11" data-line-number="11"><span class="co">#&gt; $Location</span></a>
 <a class="sourceLine" id="cb2-12" data-line-number="12"><span class="co">#&gt; [1] "ANC"</span></a></code></pre></div>
-<p>###Get 3-letter airport codes</p>
+</div>
+<div id="get-3-letter-airport-codes" class="section level3">
+<h3 class="hasAnchor">
+<a href="#get-3-letter-airport-codes" class="anchor"></a>Get 3-letter airport codes</h3>
 <p>SunsetTSA also has several functions for looking up 3-letter airport codes. It will return a data frame with any matches including columns for Code, City, State, and Airport.</p>
 <p>Data come from the U.S. Bureau of Transportation Statistics; I downloaded a CSV file from <a href="https://www.transtats.bts.gov/Download_Lookup.asp?Lookup=L_AIRPORT">https://www.transtats.bts.gov/Download_Lookup.asp?Lookup=L_AIRPORT</a>.</p>
-<p>####By city name</p>
+<div id="by-city-name" class="section level4">
+<h4 class="hasAnchor">
+<a href="#by-city-name" class="anchor"></a>By city name</h4>
 <p>The <code><a href="../reference/airport_codes_by_city.html">airport_codes_by_city()</a></code> function has one required argument, city name, and an optional state name, such as:</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="kw"><a href="../reference/airport_codes_by_city.html">airport_codes_by_city</a></span>(<span class="st">"Providence"</span>)</a>
 <a class="sourceLine" id="cb3-2" data-line-number="2"><span class="co">#&gt;      Code       City State                      Airport</span></a>
@@ -124,7 +130,10 @@
 <a class="sourceLine" id="cb3-5" data-line-number="5"><span class="co">#&gt;     Code       City State             Airport</span></a>
 <a class="sourceLine" id="cb3-6" data-line-number="6"><span class="co">#&gt; 931  GDC Greenville    SC     Donaldson Field</span></a>
 <a class="sourceLine" id="cb3-7" data-line-number="7"><span class="co">#&gt; 958  GMU Greenville    SC Greenville Downtown</span></a></code></pre></div>
-<p>####All codes in a state</p>
+</div>
+<div id="all-codes-in-a-state" class="section level4">
+<h4 class="hasAnchor">
+<a href="#all-codes-in-a-state" class="anchor"></a>All codes in a state</h4>
 <p>The <code><a href="../reference/airport_codes_by_state.html">airport_codes_by_state()</a></code> function will return all available codes in a state, with the two-letter postal abbreviation as the argument:</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" data-line-number="1"><span class="kw"><a href="../reference/airport_codes_by_state.html">airport_codes_by_state</a></span>(<span class="st">"RI"</span>)</a>
 <a class="sourceLine" id="cb4-2" data-line-number="2"><span class="co">#&gt;      Code            City State</span></a>
@@ -143,12 +152,17 @@
 <a class="sourceLine" id="cb4-15" data-line-number="15"><span class="co">#&gt; 2263                              North Central State</span></a>
 <a class="sourceLine" id="cb4-16" data-line-number="16"><span class="co">#&gt; 2747                                   Westerly State</span></a>
 <a class="sourceLine" id="cb4-17" data-line-number="17"><span class="co">#&gt; 2826                                    Quonset State</span></a></code></pre></div>
-<p>####Code by airport name</p>
+</div>
+<div id="code-by-airport-name" class="section level4">
+<h4 class="hasAnchor">
+<a href="#code-by-airport-name" class="anchor"></a>Code by airport name</h4>
 <p>You can also try looking up the code by airport name or partial airport name with <code><a href="../reference/airport_codes_by_name.html">airport_codes_by_name()</a></code>. However, you’ll need part of the <em>same name that the Bureau of Transportation uses.</em> So, while you may refer to one of New York City’s airport as “JFK”, you’d need to know that it’s “John F. Kennedy International” to the BTS. “Kennedy” would also work:</p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" data-line-number="1"><span class="kw"><a href="../reference/airport_codes_by_name.html">airport_codes_by_name</a></span>(<span class="st">"Kennedy"</span>)</a>
 <a class="sourceLine" id="cb5-2" data-line-number="2"><span class="co">#&gt;      Code     City State                       Airport</span></a>
 <a class="sourceLine" id="cb5-3" data-line-number="3"><span class="co">#&gt; 246   ASX  Ashland    WI       John F Kennedy Memorial</span></a>
 <a class="sourceLine" id="cb5-4" data-line-number="4"><span class="co">#&gt; 1189  JFK New York    NY John F. Kennedy International</span></a></code></pre></div>
+</div>
+</div>
   </div>
 
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
