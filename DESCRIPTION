@@ -6,7 +6,7 @@ Authors@R: c(person("Sharon", "Machlis", email = "Rbook@machlis.com", role =  c(
 Description: Wrapper for a US Transportation Security Administration API.
     API info: <https://www.dhs.gov/mytsa-api-documentation>
     Includes helper functions to look up 3-letter codes for US airports.
-License: GPL-3 + file LICENSE
+License: GPL-3
 Encoding: UTF-8
 LazyData: true
 Imports:

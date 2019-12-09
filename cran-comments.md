@@ -1,3 +1,7 @@
+## Resubmission
+
+This responds to CRAN feedback email telling me to omit the LICENSE file and its reference because it is not needed for GPL.
+
 ## Test environments
 * local Windows 10 Pro install, R 3.6.0
 * Ubuntu 16.04.6 (on travis-ci), R 3.6.1
