@@ -1,8 +1,9 @@
 ## Test environments
-* local Windows install, R 3.6.0
+* local Windows 10 Pro install, R 3.6.0
 * Ubuntu 16.04.6 (on travis-ci), R 3.6.1
 * win-builder (devel)
 * Ubuntu Linux 16.04 (with rhub, devel)
+* Mac OS X Darwin 15.6.0, R 3.6.0 (with rhub)
 
 ## R CMD check results
 
