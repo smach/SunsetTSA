@@ -1,7 +1,8 @@
 ## Test environments
-* local OS X install, R 3.6.0
-* ubuntu 14.04 (on travis-ci), R 3.6.0
-* win-builder (devel and release)
+* local Windows install, R 3.6.0
+* Ubuntu 16.04.6 (on travis-ci), R 3.6.1
+* win-builder (devel)
+* Ubuntu Linux 16.04 (with rhub, devel)
 
 ## R CMD check results
 
@@ -9,5 +10,7 @@
 
 * This is a new release.
 
-* Internet connection required to run tests.
+## Unit test info
+
+* Internet connection required to run unit tests.
 
