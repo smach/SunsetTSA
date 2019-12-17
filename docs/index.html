@@ -11,10 +11,9 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/v4-shims.min.css" integrity="sha256-6qHlizsOWFskGlwVOKuns+D1nB6ssZrHQrNj1wGplHc=" crossorigin="anonymous">
 <!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/headroom.min.js" integrity="sha256-DJFC1kqIhelURkuza0AvYal5RxMtpzLjFhsnVIeuk+U=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- pkgdown --><link href="pkgdown.css" rel="stylesheet">
 <script src="pkgdown.js"></script><meta property="og:title" content="Get Sunrise and Sunset Times for US Airport Locations">
-<meta property="og:description" content="Function to get sunrise and sunset times by date and US three-letter airport code.
-    Data come from a US Transportation Security Administration API.
-    Also functions to look up three-letter codes for US airports by city name, 
-    city and state, state, and partial airport name, from a US Bureau of Transportation Statistics table.">
+<meta property="og:description" content="Wrapper for a US Transportation Security Administration API.
+    API info: &lt;https://www.dhs.gov/mytsa-api-documentation&gt;
+    Includes helper functions to look up 3-letter codes for US airports.">
 <meta name="twitter:card" content="summary">
 <!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS-MML_HTMLorMML.js" integrity="sha256-84DKXVJXs0/F8OTMzX4UR909+jtl4G7SPypPavF+GfA=" crossorigin="anonymous"></script><!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -82,7 +81,7 @@
 <a href="#get-sunrise-and-sunset-times-for-us-airport-locations" class="anchor"></a>Get Sunrise and Sunset Times for US Airport Locations</h2>
 <p>This package gets sunrise and sunset times for any US airport location by 3-letter airport code. The <code><a href="reference/sunrise_sunset.html">sunrise_sunset()</a></code> function takes one mandatory argument, the airport code; and one optional argument, the date in yyyy-mm-dd format (without a date, results default to today’s date.) Results are a list with sunrise time, sunset time, airport code, and date requested. Data come from a TSA API.</p>
 <p>The package also has several convenience functions to look up airport codes by city, city and state, state, or partial name of the airport. Results are a data frame with airport code, city, state, and airport name. Data come from the US Bureau of Transportation Statistics.</p>
-<p>This package is not yet on CRAN. To install it, you can use any number of packages and functions, including <code><a href="https://rdrr.io/pkg/remotes/man/install_github.html">remotes::install_github("smach/SunsetTSA")</a></code> or <code><a href="https://rdrr.io/pkg/githubinstall/man/gh_install_packages.html">githubinstall::githubinstall("SunsetTSA")</a></code> (<code>githubinstall()</code> attempts to find a package on GitHub even if you don’t know the repo owner’s account, and then asks you if you want to install the version it finds.)</p>
+<p>This package is now on CRAN. To install it, run <code><a href="https://rdrr.io/r/utils/install.packages.html">install.packages("SunsetTSA")</a></code>.</p>
 <p>For more information, run <code><a href="articles/Introduction.html">vignette("Introduction",  package = "SunsetTSA")</a></code> after installing the package or head to the package website at <a href="https://smach.github.io/SunsetTSA/">https://smach.github.io/SunsetTSA/</a>.</p>
 <!-- badges: start -->
 
@@ -94,6 +93,8 @@
     <div class="links">
 <h2>Links</h2>
 <ul class="list-unstyled">
+<li>Download from CRAN at <br><a href="https://cloud.r-project.org/package=SunsetTSA">https://​cloud.r-project.org/​package=SunsetTSA</a>
+</li>
 <li>Report a bug at <br><a href="https://github.com/smach/SunsetTSA/issues">https://​github.com/​smach/​SunsetTSA/​issues</a>
 </li>
 </ul>
@@ -101,8 +102,7 @@
 <div class="license">
 <h2>License</h2>
 <ul class="list-unstyled">
-<li><a href="LICENSE.html">Full license</a></li>
-<li><small><a href="https://www.r-project.org/Licenses/GPL-3">GPL-3</a> + file <a href="LICENSE-text.html">LICENSE</a></small></li>
+<li><a href="https://www.r-project.org/Licenses/GPL-3">GPL-3</a></li>
 </ul>
 </div>
 <div class="developers">
@@ -116,6 +116,7 @@
 <h2>Dev status</h2>
 <ul class="list-unstyled">
 <li><a href="https://travis-ci.org/smach/SunsetTSA"><img src="https://travis-ci.org/smach/SunsetTSA.svg?branch=master" alt="Travis build status"></a></li>
+<li><a href="https://CRAN.R-project.org/package=SunsetTSA"><img src="https://www.r-pkg.org/badges/version/SunsetTSA" alt="CRAN status"></a></li>
 </ul>
 </div>
 </div>
