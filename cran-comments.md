@@ -1,6 +1,6 @@
 ## Resubmission
 
-This responds to CRAN feedback email telling me to omit the LICENSE file and its reference because it is not needed for GPL.
+This first resubmission responds to CRAN feedback email instructing me to omit the LICENSE file and a reference to it because it is not needed for GPL.
 
 ## Test environments
 * local Windows 10 Pro install, R 3.6.0
@@ -11,9 +11,7 @@ This responds to CRAN feedback email telling me to omit the LICENSE file and its
 
 ## R CMD check results
 
-0 errors | 0 warnings | 1 note
-
-* This is a new release.
+0 errors | 0 warnings | 0 notes
 
 ## Unit test info
 
